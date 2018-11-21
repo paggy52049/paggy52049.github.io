@@ -1,0 +1,174 @@
+.hambuger{
+    position:relative;
+    height: 60px;
+    width: 60px;
+    padding: 0;
+float: right;
+}
+.hambuger span{
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+   
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.hambuger span::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    bottom: 15px;
+}
+.hambuger span::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    top: 15px;
+}
+nav .menu {
+    display: none;
+    /* float: none; */
+}
+nav .logo {
+    float: none;
+}
+
+
+
+
+
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+nav a {
+    color: #eee;
+    padding: 15px;
+    display: block;
+
+    transition: all .3s;
+}
+
+
+
+
+
+@media screen and (min-width: 540px){
+    .hambuger{
+        display: none;
+    }
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+nav .logo {
+    float: left;
+}
+nav .menu {
+    float: right;
+    display: block;
+    
+}
+nav li {
+    float: left;
+}
+nav a {
+    color: #eee;
+    padding: 15px;
+    display: block;
+    
+    transition: all .3s;
+}
+nav .menu a:hover {
+    background-color: rgb(68, 68, 68);
+    padding: 20px;
+}
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url(https://source.unsplash.com/random/1600x600);
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+header h1{
+    font-size: 80px;
+}
+header p{
+    padding-bottom: 30px;
+}
+#about{
+    padding: 100px 0;
+}
+#about h1{
+    text-align: center;
+}
+#ad{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url(https://source.unsplash.com/random/1600x600?sig=3);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;  
+    font-size: 0;
+}
+
+/* inline-block 置中 */
+.ibc{
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+#service{
+    font-size: 0;
+    padding: 100px 0;
+    background-color: rgb(204, 197, 197);
+
+}
+#service p{
+    margin: 20px 0;
+}
+
+
+#service-2{
+    font-size: 0;
+    padding: 100px 0;
+}
+#service-2 p{
+    padding: 20px 0;
+}
+
+footer{
+    background-color: #222;
+    padding:60px;
+}
+.icon li i{
+  
+    float: left;
+   
+    margin: 0 10px;
+}
+
+#copy{
+    text-align: center;
+    background-color: #000;
+    color:#fff;
+    padding: 5px 0;
+}
